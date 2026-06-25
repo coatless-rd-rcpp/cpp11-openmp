@@ -1,0 +1,19 @@
+Package: cpp11openmp
+Title: Using OpenMP with cpp11
+Version: 0.0.0.9000
+Authors@R:
+    person(given = "James",
+           family = "Balamuta",
+           role = c("aut", "cre"),
+           email = "balamut2@illinois.edu")
+Description: Provides an example of parallelizing a C++ routine with 'OpenMP'
+    inside a function exposed to R with 'cpp11'.
+BugReports: https://github.com/coatless-rd-rcpp/cpp11-openmp/issues
+URL: https://github.com/coatless-rd-rcpp/cpp11-openmp, https://rd-rcpp.thecoatlessprofessor.com/cpp11-openmp/
+Depends: R (>= 3.5.0)
+LinkingTo:
+    cpp11
+License: GPL (>= 2)
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.0.0

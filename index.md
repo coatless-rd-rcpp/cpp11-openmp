@@ -133,8 +133,10 @@ parallel_row_norms <- function(x) {
 *cpp11* is header-only and is reached through `LinkingTo`. Unlike an
 *Rcpp* package, no `Imports: Rcpp` entry is needed.
 
-    LinkingTo:
-        cpp11
+``` default
+LinkingTo:
+    cpp11
+```
 
 ## License
 

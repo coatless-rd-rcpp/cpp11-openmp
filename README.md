@@ -5,10 +5,10 @@
 <!-- badges: end -->
 
 The `cpp11openmp` _R_ package provides an example of parallelizing a _C++_
-routine with [_OpenMP_](https://www.openmp.org/) inside a function exposed to _R_
-with [_cpp11_](https://cpp11.r-lib.org/). _cpp11_ is a lighter-weight,
+routine with [_OpenMP_][openmp] inside a function exposed to _R_
+with [_cpp11_][cpp11]. _cpp11_ is a lighter-weight,
 header-only alternative to _Rcpp_, and this example mirrors
-[`rcpp-openmp`](https://github.com/coatless-rd-rcpp/rcpp-openmp) with the _cpp11_
+[`rcpp-openmp`][rcpp-openmp] with the _cpp11_
 toolchain in place of _Rcpp_.
 
 ### Usage
@@ -16,9 +16,9 @@ toolchain in place of _Rcpp_.
 To install the package, you must first have a compiler on your system that is
 compatible with R and that supports _OpenMP_. For help on obtaining a compiler
 consult either
-[macOS](http://thecoatlessprofessor.com/programming/r-compiler-tools-for-rcpp-on-os-x/)
+[macOS][compiler-macos]
 or
-[Windows](http://thecoatlessprofessor.com/programming/rcpp/install-rtools-for-rcpp/)
+[Windows][compiler-windows]
 guides.
 
 With a compiler in hand, one can then install the package from GitHub by:
@@ -131,7 +131,7 @@ parallel_row_norms <- function(x) {
 _cpp11_ is header-only and is reached through `LinkingTo`. Unlike an _Rcpp_
 package, no `Imports: Rcpp` entry is needed.
 
-```
+```default
 LinkingTo:
     cpp11
 ```
@@ -139,3 +139,9 @@ LinkingTo:
 ## License
 
 GPL (\>= 2)
+
+[compiler-macos]: http://thecoatlessprofessor.com/programming/r-compiler-tools-for-rcpp-on-os-x/
+[compiler-windows]: http://thecoatlessprofessor.com/programming/rcpp/install-rtools-for-rcpp/
+[cpp11]: https://cpp11.r-lib.org/
+[openmp]: https://www.openmp.org/
+[rcpp-openmp]: https://github.com/coatless-rd-rcpp/rcpp-openmp
